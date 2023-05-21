@@ -24,8 +24,8 @@ class UnalignedDataset(BaseDataset):
             opt (Option class) -- stores all the experiment flags; needs to be a subclass of BaseOptions
         """
         BaseDataset.__init__(self, opt)
-        self.dir_A = os.path.join(opt.dataroot, 'virtual11/virtual')  # create a path '/path/to/data/trainA'
-        self.dir_B = os.path.join(opt.dataroot, 'nyu/living_room')  # create a path '/path/to/data/trainB'
+        self.dir_A = os.path.join(opt.dataroot, 'nyu/office_real')  # create a path '/path/to/data/trainA'
+        self.dir_B = os.path.join(opt.dataroot, 'virtual11/office_fake')  # create a path '/path/to/data/trainB'
 
         if opt.phase == "test" and not os.path.exists(self.dir_A) \
            and os.path.exists(os.path.join(opt.dataroot, "valA")):
@@ -65,7 +65,9 @@ class UnalignedDataset(BaseDataset):
         modified_opt = util.copyconf(self.opt, load_size=self.opt.crop_size if is_finetuning else self.opt.load_size)
         transform = get_transform(modified_opt)
         A = transform(A_img)
+        A = (A - 134.6)/43.5
         B = transform(B_img)
+        B = (B - 3727.6)/1327.3
 
         return {'A': A, 'B': B, 'A_paths': A_path, 'B_paths': B_path}
 
