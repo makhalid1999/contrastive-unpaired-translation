@@ -7,7 +7,7 @@
 ### [video (1m)](https://youtu.be/Llg0vE_MVgk) |  [video (10m)](https://youtu.be/jSGOzjmN8q0) | [website](http://taesung.me/ContrastiveUnpairedTranslation/) |   [paper](https://arxiv.org/pdf/2007.15651)
 <br>
 
-[Colab] (https://colab.research.google.com/github/makhalid1999/contrastive-unpaired-translation/blob/master/achieving_depth_realism.ipynb)
+[Colab](https://colab.research.google.com/github/makhalid1999/contrastive-unpaired-translation/blob/master/achieving_depth_realism.ipynb)
 <img src='imgs/gif_cut.gif' align="right" width=960>
 
 <br><br><br>
