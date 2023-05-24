@@ -2,9 +2,9 @@
 
 # Achieving Depth Realisim using Contrastive Unpaired Translation (CUT)
 
-### This is forked repository for the CUT model that is used for my application**
+### This is forked repository for the CUT model that is used for my application
 
-### [Colab](https://colab.research.google.com/github/makhalid1999/contrastive-unpaired-translation/blob/master/achieving_depth_realism.ipynb)
+## [Colab](https://colab.research.google.com/github/makhalid1999/contrastive-unpaired-translation/blob/master/achieving_depth_realism.ipynb)
 
 **The rest is description of CUT**
 
